@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Martin Shahbazyan — Award-winning concert pianist, composer, and singer performing across Europe and the Americas.">
+  <meta property="og:title" content="Martin Shahbazyan — Pianist & Composer">
+  <meta property="og:description" content="Award-winning concert pianist and composer rooted in Armenian musical heritage.">
+  <meta property="og:type" content="website">
+  <title>Martin Shahbazyan — Pianist &amp; Composer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">Martin Shahbazyan</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#performances" class="nav-link">Performances</a></li>
+          <li><a href="#awards" class="nav-link">Awards</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#teaching" class="nav-link">Teaching</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="#performances" class="nav-link">Performances</a></li>
+        <li><a href="#awards" class="nav-link">Awards</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#teaching" class="nav-link">Teaching</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero">
+      <div class="hero-grid">
+
+        <!-- Photo -->
+        <div class="hero-photo-side">
+          <div class="photo-frame">
+            <!-- Placeholder shown until artist.jpg is added -->
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <span class="placeholder-initials">MS</span>
+            </div>
+            <!--
+              TO ADD YOUR PHOTO:
+              Place a file named "artist.jpg" in this same folder.
+              It will automatically appear here.
+            -->
+            <img
+              src="artist.jpg"
+              alt="Martin Shahbazyan — concert pianist"
+              class="hero-img"
+              id="artistPhoto"
+              onerror="this.classList.add('hidden')"
+            >
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="hero-text-side">
+          <div class="hero-inner">
+            <p class="eyebrow">Pianist &nbsp;&bull;&nbsp; Composer &nbsp;&bull;&nbsp; Singer</p>
+            <h1 class="hero-name">Martin<br>Shahbazyan</h1>
+            <div class="gold-rule"></div>
+            <p class="hero-bio">
+              Award-winning concert pianist and composer, performing at concert halls
+              across Armenia, Europe, and the Americas. Classically trained and deeply
+              rooted in Armenian musical heritage, with a parallel voice in Alt/Prog music.
+            </p>
+            <div class="hero-actions">
+              <a href="#performances" class="btn btn-gold">View Performances</a>
+              <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-social">
+              <a href="https://youtube.com/c/MartinShahbazyan" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+                Classical
+              </a>
+              <a href="https://youtube.com/@martinian-high" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+                Alt/Prog
+              </a>
+              <a href="https://instagram.com/martinshahbazyan" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.2-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.3 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.3 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1.0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24c3.3 0 3.7 0 4.9-.1 4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.hero-grid -->
+      <a href="#performances" class="scroll-cue" aria-label="Scroll to performances">
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+
+    <!-- ═══ PERFORMANCES ═══ -->
+    <section id="performances" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="sec-num">01</span>
+          <h2>Performances</h2>
+          <div class="sec-rule"></div>
+        </div>
+
+        <div class="timeline">
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2026</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>Jacob Collier's Hideaway</h3>
+                <p>Participant</p>
+              </div>
+              <div class="tl-event">
+                <h3>Solo Recital</h3>
+                <p>Sala dei Notari</p>
+              </div>
+              <div class="tl-event">
+                <h3>Recital with Perugia Festival Orchestra</h3>
+                <p>Chiesa di Santo Spirito</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2025–26</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>Performances — Las Colinas Symphony Orchestra</h3>
+                <p>Season engagements</p>
+              </div>
+              <div class="tl-event">
+                <h3>Harpsichord Performances</h3>
+                <p>Baroque ensemble</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2023</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>'Petrushka' — Dallas Black Dance Theatre</h3>
+                <p>Bass Hall, Fort Worth Symphony Orchestra</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2020</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>Charity-Concert of Gratitude</h3>
+                <p>Aram Khachaturian Concert Hall &mdash; Duo performance</p>
+              </div>
+              <div class="tl-event">
+                <h3>Commemoration Night Concert at Tsitsernakaberd</h3>
+                <p>Self-composed piece</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2019</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>'Armenia in Rock' Rock Festival</h3>
+                <p>Opera Square (Freedom Square), Yerevan &mdash; Band performance of self-composed songs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2018</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>Solo Recital in Finland</h3>
+                <p>Sigyn Hall, Turku, Finland</p>
+              </div>
+              <div class="tl-event">
+                <h3>9th Armenian Composers' Art Festival</h3>
+                <p>Participant</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2017</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>'Haro Stepanyan' Festival</h3>
+                <p>World premiere of Haro Stepanyan's piano preludes</p>
+              </div>
+              <div class="tl-event">
+                <h3>'Hovnan' Theatrical Performance</h3>
+                <p>Original score composer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2015</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>Fête de la Musique</h3>
+                <p>France Square, Yerevan &mdash; Band performance of self-composed songs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2012–14</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>'TUMOrchestra' Band</h3>
+                <p>Member</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-group fade-in">
+            <div class="tl-year">2011</div>
+            <div class="tl-events">
+              <div class="tl-event">
+                <h3>'Creation Formula'</h3>
+                <p>Documentary about Arno Babajanian &mdash; Participant</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.timeline -->
+      </div>
+    </section>
+
+
+    <!-- ═══ AWARDS ═══ -->
+    <section id="awards" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="sec-num">02</span>
+          <h2>Awards</h2>
+          <div class="sec-rule"></div>
+        </div>
+
+        <div class="awards-grid">
+
+          <div class="award-card fade-in">
+            <span class="award-year">2025</span>
+            <h3>Piano Campus</h3>
+            <p class="award-result">Piano Campus de Bronze</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2024</span>
+            <h3>"VILLAHERMOSA" International Piano Competition</h3>
+            <p class="award-result">1st Prize</p>
+          </div>
+
+          <div class="award-card fade-in">
+            <span class="award-year">2024</span>
+            <h3>TMC Young Artist Competition</h3>
+            <p class="award-result">3rd Prize</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2022</span>
+            <h3>Franz Liszt Center International Piano Competition</h3>
+            <p class="award-result">1st Prize</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2022</span>
+            <h3>47th Annual Pi Kappa Lambda Honors</h3>
+            <p class="award-result">1st Prize</p>
+          </div>
+
+          <div class="award-card fade-in">
+            <span class="award-year">2021</span>
+            <h3>MTNA Houston, TX</h3>
+            <p class="award-result">Alternate</p>
+          </div>
+
+          <div class="award-card award-grand fade-in">
+            <span class="award-year">2020</span>
+            <h3>1st 'Harmonium' OnlinePlus International Competition</h3>
+            <p class="award-result">Grand Prix</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2020</span>
+            <h3>YSC Chamber Music Competition</h3>
+            <p class="award-result">1st Prize</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2018</span>
+            <h3>VI Heghine Ter-Ghevondyan Competition</h3>
+            <p class="award-result">1st Prize &amp; 5 Special Prizes</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2017</span>
+            <h3>IV Arno Babajanyan International Competition</h3>
+            <p class="award-result">1st Prize &amp; Special Prize for best performance of Babajanyan's work</p>
+          </div>
+
+          <div class="award-card fade-in">
+            <span class="award-year">2014</span>
+            <h3>VI Tbilisi International Young Pianists' Contest</h3>
+            <p class="award-result">3rd Prize</p>
+          </div>
+
+          <div class="award-card award-1st fade-in">
+            <span class="award-year">2012</span>
+            <h3>'You Are Our Pride' International Competition</h3>
+            <p class="award-result">1st Prize</p>
+          </div>
+
+          <div class="award-card fade-in">
+            <span class="award-year">2012</span>
+            <h3>'Open Europe – Open Planet' Moscow International Contest</h3>
+            <p class="award-result">3rd Prize</p>
+          </div>
+
+          <div class="award-card fade-in">
+            <span class="award-year">2011</span>
+            <h3>'VII G. Sarajev' Piano Competition</h3>
+            <p class="award-result">2nd Prize</p>
+          </div>
+
+        </div><!-- /.awards-grid -->
+      </div>
+    </section>
+
+
+    <!-- ═══ EDUCATION ═══ -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="sec-num">03</span>
+          <h2>Education</h2>
+          <div class="sec-rule"></div>
+        </div>
+
+        <div class="edu-list">
+
+          <div class="edu-item fade-in">
+            <div class="edu-main">
+              <div class="edu-badge">Piano</div>
+              <h3 class="edu-institution">Texas Christian University</h3>
+              <p class="edu-degree">Master of Music &amp; Artist Diploma, Piano</p>
+              <p class="edu-location">Fort Worth, Texas, USA</p>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-years">2021 – 2026</span>
+            </div>
+          </div>
+
+          <div class="edu-item fade-in">
+            <div class="edu-main">
+              <div class="edu-badge">Piano</div>
+              <h3 class="edu-institution">Texas Christian University</h3>
+              <p class="edu-degree">Bachelor of Arts, Piano</p>
+              <p class="edu-location">Fort Worth, Texas, USA</p>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-years">2016 – 2020</span>
+            </div>
+          </div>
+
+          <div class="edu-item fade-in">
+            <div class="edu-main">
+              <div class="edu-badge">Piano</div>
+              <h3 class="edu-institution">Komitas State Conservatory of Yerevan</h3>
+              <p class="edu-degree">Piano Studies</p>
+              <p class="edu-location">Yerevan, Armenia</p>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-years">2016 – 2020</span>
+            </div>
+          </div>
+
+          <div class="edu-item fade-in">
+            <div class="edu-main">
+              <div class="edu-badge">Exchange</div>
+              <h3 class="edu-institution">Turku University of Applied Sciences</h3>
+              <p class="edu-degree">Faculty of Education &amp; Social Services — Piano</p>
+              <p class="edu-location">Turku, Finland</p>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-years">2018</span>
+            </div>
+          </div>
+
+        </div><!-- /.edu-list -->
+      </div>
+    </section>
+
+
+    <!-- ═══ TEACHING ═══ -->
+    <section id="teaching" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="sec-num">04</span>
+          <h2>Teaching &amp; Experience</h2>
+          <div class="sec-rule"></div>
+        </div>
+
+        <div class="jobs-grid">
+
+          <div class="job-card fade-in">
+            <p class="job-org">School of Rock</p>
+            <h3 class="job-title">Piano Instructor</h3>
+            <p class="job-period">Dec 2025 – May 2026</p>
+          </div>
+
+          <div class="job-card fade-in">
+            <p class="job-org">Fort-Worth Country Day</p>
+            <h3 class="job-title">Piano Teacher</h3>
+            <p class="job-period">Aug 2023 – May 2026</p>
+          </div>
+
+          <div class="job-card fade-in">
+            <p class="job-org">Texas Christian University</p>
+            <h3 class="job-title">Piano Accompanist</h3>
+            <p class="job-period">Aug 2021 – May 2026</p>
+          </div>
+
+          <div class="job-card fade-in">
+            <p class="job-org">DASA2</p>
+            <h3 class="job-title">Piano Tutor</h3>
+            <p class="job-period">Apr 2021 – Present</p>
+          </div>
+
+          <div class="job-card fade-in">
+            <p class="job-org">Sayat-Nova Music School</p>
+            <h3 class="job-title">Piano Accompanist</h3>
+            <p class="job-period">Sep 2019 – Jun 2021</p>
+          </div>
+
+        </div><!-- /.jobs-grid -->
+      </div>
+    </section>
+
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <div class="contact-left fade-in">
+            <div class="section-header contact-header">
+              <span class="sec-num">05</span>
+              <h2>Contact</h2>
+            </div>
+            <p class="contact-intro">
+              For bookings, collaborations, and inquiries, please reach out directly.
+            </p>
+            <a href="mailto:shahbazyan.martin@gmail.com" class="contact-email">
+              shahbazyan.martin@gmail.com
+            </a>
+            <div class="contact-info">
+              <div class="contact-block">
+                <p class="contact-label">Location</p>
+                <p>31 Halabyan str, apt 51<br>Yerevan, Armenia 0038</p>
+              </div>
+              <div class="contact-block">
+                <p class="contact-label">Phone</p>
+                <p><a href="tel:+37455565115">+374 55 565115</a></p>
+              </div>
+              <div class="contact-block">
+                <p class="contact-label">Languages</p>
+                <div class="lang-tags">
+                  <span class="lang-tag">Armenian <em>Native</em></span>
+                  <span class="lang-tag">English <em>Advanced</em></span>
+                  <span class="lang-tag">Russian <em>Advanced</em></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right fade-in">
+            <p class="contact-label">Online</p>
+            <div class="social-rows">
+
+              <a href="https://youtube.com/c/MartinShahbazyan" target="_blank" rel="noopener noreferrer" class="social-row">
+                <div class="social-row-left">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+                  <span>YouTube — Classical</span>
+                </div>
+                <span class="social-url">youtube.com/c/MartinShahbazyan</span>
+                <span class="social-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a href="https://youtube.com/@martinian-high" target="_blank" rel="noopener noreferrer" class="social-row">
+                <div class="social-row-left">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+                  <span>YouTube — Alt/Prog Armenian</span>
+                </div>
+                <span class="social-url">youtube.com/@martinian-high</span>
+                <span class="social-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <a href="https://instagram.com/martinshahbazyan" target="_blank" rel="noopener noreferrer" class="social-row">
+                <div class="social-row-left">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.2-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.3 2.2 12s0-3.6.1-4.8C2.4 3.9 4 2.3 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1.0 8.3 0 8.7 0 12c0 3.3 0 3.7.1 4.9.2 4.4 2.6 6.8 7 7C8.3 24 8.7 24 12 24c3.3 0 3.7 0 4.9-.1 4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9 0-3.3 0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+                  <span>Instagram</span>
+                </div>
+                <span class="social-url">instagram.com/martinshahbazyan</span>
+                <span class="social-arrow" aria-hidden="true">→</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div><!-- /.contact-grid -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Martin Shahbazyan</p>
+      <p class="footer-copy">&copy; 2026 &mdash; Pianist &amp; Composer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
